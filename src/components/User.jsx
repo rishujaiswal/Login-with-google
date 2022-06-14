@@ -18,7 +18,7 @@ export default function User() {
     <Section>
       <div className="container">
         <h1>Welcome {user?.email}</h1>
-        <img className="image_user" src={user?.photoURL} alt=""/>
+        <img className="img_user" src={user?.photoURL} alt=""/>
         <h5>Name:{user?.displayName}</h5>
         <button onClick={() => signOut(firebaseAuth)}>Sign Out</button>
       </div>
