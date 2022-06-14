@@ -18,7 +18,7 @@ export default function User() {
     <Section>
       <div className="container">
         <h1>Welcome {user?.email}</h1>
-        <img src={user?.photoURL} alt=""/>
+        <img className="image_user" src={user?.photoURL} alt=""/>
         <h5>Name:{user?.displayName}</h5>
         <button onClick={() => signOut(firebaseAuth)}>Sign Out</button>
       </div>
@@ -32,6 +32,10 @@ const Section = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
+  .img_user{
+    width:120px;
+    hieght:120px;
+  }
   .container {
     height: 50vh;
     width: 40vw;
